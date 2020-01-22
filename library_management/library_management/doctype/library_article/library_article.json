@@ -13,7 +13,9 @@
   "language",
   "image",
   "section_break_9",
-  "description"
+  "description",
+  "publish",
+  "route"
  ],
  "fields": [
   {
@@ -64,10 +66,23 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "publish",
+   "fieldtype": "Check",
+   "label": "Publish"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
+ "is_published_field": "publish",
  "links": [],
- "modified": "2020-01-22 11:53:45.701776",
+ "modified": "2020-01-22 15:45:42.896432",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Article",
@@ -99,6 +114,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "article",
  "sort_field": "modified",
  "sort_order": "ASC",
  "title_field": "article_name",
