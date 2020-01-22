@@ -3,7 +3,6 @@
 
 frappe.ui.form.on('Library Transaction',
 {
-	// refresh: function(frm) {
 	"library_member" : function(frm) 
 	{
 		frappe.call
@@ -16,7 +15,6 @@ frappe.ui.form.on('Library Transaction',
             },
 			callback: function (data) 
 			{
-				console.log("get",data);
                 frappe.model.set_value(frm.doctype,
                     frm.docname, "member_name",
                     data.message.first_name
@@ -28,8 +26,10 @@ frappe.ui.form.on('Library Transaction',
 		
 	},
 
-	"library_article": function(frm){
-		frappe.call({
+	"library_article": function(frm)
+	{
+		frappe.call
+		({
 			"method": "frappe.client.get",
 			args:{
 				doctype: "Library Article",
@@ -37,18 +37,14 @@ frappe.ui.form.on('Library Transaction',
 			},
 			callback: function (data) 
 			{
-				console.log("get",data);
                 frappe.model.set_value(frm.doctype,
                     frm.docname, "article_name",
-                    data.message.article_name
-                    )
+                    data.message.article_name )
 				
             }
 
 		})
 	}
 	
-	
-	// }
 });
 
