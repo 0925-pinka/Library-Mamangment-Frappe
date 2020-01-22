@@ -10,8 +10,7 @@
   "library_article",
   "article_name",
   "library_member",
-  "member_name",
-  "data_7"
+  "member_name"
  ],
  "fields": [
   {
@@ -49,10 +48,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "data_7",
-   "fieldtype": "Data"
-  },
-  {
    "fieldname": "library_article",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -62,7 +57,7 @@
   }
  ],
  "links": [],
- "modified": "2020-01-21 16:20:46.298258",
+ "modified": "2020-01-22 11:18:57.738334",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",
